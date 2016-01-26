@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [[ "$1" = "$FAKE_EXPECTED_DATE_PATTERN" ]]; then
+  echo "$FAKE_FIXED_DATE"
+else
+  exit 1
+fi
